@@ -1,0 +1,8 @@
+prefix=/home/ahmed/autoProject/Trial1/devel
+
+Name: SmallKit
+Description: Description of SmallKit
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/ahmed/autoProject/Trial1/devel/lib 
+Requires: 

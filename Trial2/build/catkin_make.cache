@@ -1,0 +1,2 @@
+gazebo_ros_pkgs/gazebo_msgs:gazebo_ros_pkgs/gazebo_plugins:gazebo_ros_pkgs/gazebo_ros:gazebo_ros_pkgs/gazebo_ros_pkgs
+-DCATKIN_DEVEL_PREFIX=/home/ahmed/autoProject/Trial2/devel -DCMAKE_INSTALL_PREFIX=/home/ahmed/autoProject/Trial2/install -G Unix Makefiles

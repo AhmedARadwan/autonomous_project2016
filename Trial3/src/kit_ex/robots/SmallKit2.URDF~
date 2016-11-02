@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<robot
+  name="SmallKit2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00052065 -0.020458 0.0014904"
+        rpy="0 0 0" />
+      <mass
+        value="0.2" />
+      <inertia
+        ixx="0.00020909"
+        ixy="1.3677E-08"
+        ixz="-3.6286E-07"
+        iyy="0.00058641"
+        iyz="7.3324E-09"
+        izz="0.00042729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+
+
+
+  <link
+    name="LeftMotor1">
+    <inertial>
+      <origin
+        xyz="-1.7301E-05 -0.017479 -3.7604E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.05" />
+      <inertia
+        ixx="1.2872E-05"
+        ixy="3.6542E-10"
+        ixz="5.7939E-09"
+        iyy="2.1968E-05"
+        iyz="-7.4072E-10"
+        izz="1.2883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/LeftMotor1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.098039 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/LeftMotor1.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+
+  <joint
+    name="LeftMotor1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.059938 -0.053084 -0.02115"
+      rpy="-3.1416 0.95287 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="LeftMotor1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+
+
+
+  <link
+    name="LeftMotor2">
+    <inertial>
+      <origin
+        xyz="-1.7301E-05 -0.017479 -3.7604E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.05" />
+      <inertia
+        ixx="1.2872E-05"
+        ixy="3.6542E-10"
+        ixz="5.7939E-09"
+        iyy="2.1968E-05"
+        iyz="-7.4072E-10"
+        izz="1.2883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/LeftMotor2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.098039 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/LeftMotor2.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+
+  <joint
+    name="LeftMotor2_joint"
+    type="continuous">
+    <origin
+      xyz="0.060852 -0.052784 -0.02115"
+      rpy="-3.1416 0.95287 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="LeftMotor2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+
+
+  <link
+    name="RightMotor1">
+    <inertial>
+      <origin
+        xyz="-1.7302E-05 -0.017479 -3.7606E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.05" />
+      <inertia
+        ixx="1.2872E-05"
+        ixy="3.6536E-10"
+        ixz="5.7938E-09"
+        iyy="2.1968E-05"
+        iyz="-7.4064E-10"
+        izz="1.2883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/RightMotor1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.098039 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/RightMotor1.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+  <joint
+    name="RightMotor1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.059938 0.050016 -0.02115"
+      rpy="3.1416 -0.49193 3.2812E-17" />
+    <parent
+      link="base_link" />
+    <child
+      link="RightMotor1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+
+
+
+
+  <link
+    name="RightMotor2">
+    <inertial>
+      <origin
+        xyz="-1.7301E-05 -0.017479 -3.7604E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.05" />
+      <inertia
+        ixx="1.2872E-05"
+        ixy="3.6542E-10"
+        ixz="5.7939E-09"
+        iyy="2.1968E-05"
+        iyz="-7.407E-10"
+        izz="1.2883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/RightMotor2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.098039 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmallKit2/meshes/RightMotor2.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+
+  <joint
+    name="RightMotor2_joint"
+    type="continuous">
+    <origin
+      xyz="0.060852 0.050016 -0.02115"
+      rpy="-3.1416 -1.382 1.117E-15" />
+    <parent
+      link="base_link" />
+    <child
+      link="RightMotor2" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>

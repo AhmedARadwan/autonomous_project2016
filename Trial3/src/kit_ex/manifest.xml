@@ -1,0 +1,6 @@
+<package>
+  <description brief="kit_ex">kit_ex</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

@@ -1,0 +1,8 @@
+prefix=/home/ahmed/autoProject/Trial1/install
+
+Name: catbot_description
+Description: Description of catbot_description
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/ahmed/autoProject/Trial1/install/lib 
+Requires: 

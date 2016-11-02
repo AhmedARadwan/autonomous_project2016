@@ -1,0 +1,8 @@
+prefix=/home/ahmed/autoProject/Trial3/install
+
+Name: gazebo_msgs
+Description: Description of gazebo_msgs
+Version: 2.6.0
+Cflags: -I/home/ahmed/autoProject/Trial3/install/include
+Libs: -L/home/ahmed/autoProject/Trial3/install/lib 
+Requires: message_runtime std_msgs trajectory_msgs geometry_msgs sensor_msgs std_srvs
